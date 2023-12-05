@@ -16,6 +16,10 @@ body {
 	color: white;
 }
 
+.container {
+	padding: 1.5rem;
+}
+
 h1 {
 	font-family: 'Press Start 2P', cursive;
 	text-align: center;
@@ -23,7 +27,9 @@ h1 {
 }
 
 #map {
-	height: 60vh;
+	border: 0.7rem solid #FA0000;
+	border-radius: 9px;
+	height: 77.7vh;
 }
 
 .gm-style-iw-d {

@@ -1,4 +1,14 @@
 
+function insertKey() {
+	const APIKEY = prompt("Insert a Google Maps APIKEY to load the map");
+	
+	const script = document.createElement('script');
+	script.src = `https://maps.googleapis.com/maps/api/js?key=${APIKEY}&callback=initMap&v=weekly`;
+	script.defer = true;
+
+	document.body.appendChild(script);
+}
+
 function initMap() {
 	const map = new google.maps.Map(document.getElementById("map"), {
 		mapId: "5604ee2c7c4b55f5",
@@ -60,4 +70,5 @@ function initMap() {
 	}
 }
 
+insertKey();
 window.initMap = initMap;
